@@ -41,15 +41,15 @@
         .span12
           = bootstrap_flash
       .row-fluid
-        .span3
+        .span2
           .well.sidebar-nav
             %ul.nav.nav-list
               %li.nav-header Sidebar
-              %li= link_to "Link 1", "/path1"
+              %li= link_to "Todo's", todos_path
               %li= link_to "Link 2", "/path2"
               %li= link_to "Link 3", "/path3"
-        .span9
+        .span10
           = yield
     
-      %footer
-        %p &copy; Company 2014
+      %footer.pull-right
+        %p inDinero&copy; Company 2014
