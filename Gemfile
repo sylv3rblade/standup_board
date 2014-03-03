@@ -38,8 +38,12 @@ gem 'therubyracer'
 gem 'backbone-on-rails'
 gem 'lodash-rails'
 
+#less 
+gem "less-rails"
+
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/jonleighton/spring
 group :development do
+  gem 'haml-rails'
   gem 'spring'
   gem 'thin'
   gem 'quiet_assets'
@@ -56,6 +60,14 @@ end
 group :development, :test do
   gem 'rspec-rails'
 end
+
+#user registration/authentication
+gem 'sorcery'
+
+#omniauth
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-github'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
