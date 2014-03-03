@@ -67,6 +67,8 @@ gem 'sorcery'
 #omniauth
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-github'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

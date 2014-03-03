@@ -1,3 +1,17 @@
-%h1 New user
-= render 'form'
-= link_to 'Back', users_path
+%h3 New user
+.row-fluid
+  .span9.offset1
+    .span3 
+      %h4 Sigup using:
+.row-fluid
+  .span9.offset2
+    .span3=link_to "facebook", "/auth/facebook",class: "btn btn-primary btn-small btn-block"
+    .span3=link_to "github", "/auth/github",class: "btn btn-info btn-small btn-block"
+.row-fluid
+  .span9
+    = render 'form'
+
+.row-fluid
+  .span9.offset2
+    = link_to 'Back', users_path
+
