@@ -1,0 +1,20 @@
+!!! 5
+%html(lang="en")
+  %head
+  %body
+    This are the tickets Filled today:
+    %table
+      %tr
+        %td Ticket #
+        %td Title
+        %td Status
+        %td Ticket URL
+        %td Pull Request
+      -if @todos
+        -@todos.each do |todo|
+          %tr
+            %td=todo.ticket
+            %td=todo.title
+            %td=todo.get_status
+            %td=todo.ticket_url
+            %td=todo.pull_request

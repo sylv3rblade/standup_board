@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0.beta1'
 
@@ -40,10 +39,16 @@ gem 'lodash-rails'
 
 #less 
 gem "less-rails"
+#haml
+gem 'haml'
+gem 'haml-rails'
+#emails
+gem "mail"
+#scheduled job
+gem 'whenever', :require => false
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/jonleighton/spring
 group :development do
-  gem 'haml-rails'
   gem 'spring'
   gem 'thin'
   gem 'quiet_assets'
