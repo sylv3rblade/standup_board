@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get "welcome/index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -56,7 +58,7 @@ Rails.application.routes.draw do
   #   end
 
   resources :todos
-  root :to => 'users#index'
+  root :to => 'welcome#index'
   resources :user_sessions
   resources :users
 
